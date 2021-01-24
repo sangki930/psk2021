@@ -17,8 +17,12 @@
                 console.log(str);
                 return;
             }
-            //확장자 배열
+            //커스텀 확장자 배열
             let a=$.makeArray($(".button").map(function(){
+                return $(this).attr("name");
+            }));
+            //고정 확장자 배열
+            let b=$.makeArray($("input[name=input-ext]").map(function(){
                 return $(this).attr("name");
             }));
             
@@ -27,7 +31,7 @@
             	return;
             }
             	
-            if(a.includes(str))
+            if(a.includes(str) || b.includes(str))
             	{
             	alert("이미 존재한 확장자입니다.");
             	$("input[name=input-ext]").val('');
