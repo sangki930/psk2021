@@ -1,0 +1,35 @@
+    *{
+        font-size: 16px;
+        font-family: Consolas, sans-serif;
+        box-sizing: border-box;
+      }
+    #ext-container{
+        width:500px;
+        height: 500px;
+        background-color: antiquewhite;
+    }
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 1px 1px;
+  font-size: 16px;
+  /* cursor: pointer; */
+  display: inline-block;
+}
+.info {color: dodgerblue;}
